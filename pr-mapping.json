@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-17T18:35:00Z",
+  "branch_prefix": "seo-geo/baseline-2026-05",
+  "pr_draft": true,
+  "audits_repo": "intelli-verse-x/seo-geo-audits",
+  "targets": [
+    {"repo": "intelli-verse-x/Intelliverse-x-frontend-revamp",        "audit": "apex",       "host": "intelli-verse-x.ai",            "stack": "Next.js",    "bd": null},
+    {"repo": "intelli-verse-x/Intelliverse-X-User-Webfrontend",       "audit": "platform",   "host": "platform.intelli-verse-x.ai",   "stack": "Next.js",    "bd": null, "note": "Same repo also backs beta - one PR covers both"},
+    {"repo": "intelli-verse-x/IntelliMarketX-frontend",               "audit": "marketx",    "host": "marketx.intelli-verse-x.ai",    "stack": "Vite SPA",   "bd": null},
+    {"repo": "intelli-verse-x/intelliverse-x-kiosk-frontend",         "audit": "kiosk",      "host": "kiosk.intelli-verse-x.ai",      "stack": "TypeScript", "bd": null},
+    {"repo": "intelli-verse-x/Intelliverse-X-AI-chat-assistance",     "audit": "ai-chat-v2", "host": "ai-chat-v2.intelli-verse-x.ai", "stack": "Python",     "bd": null},
+    {"repo": "intelli-verse-x/ManimCat",                              "audit": "animator",   "host": "animator.intelli-verse-x.ai",   "stack": "TypeScript", "bd": null},
+    {"repo": "intelli-verse-x/DeepTutor",                             "audit": "tutor",      "host": "tutor.intelli-verse-x.ai",      "stack": "Python",     "bd": null, "note": "CRITICAL: remove noindex meta"},
+    {"repo": "intelli-verse-x/Quizverse-web-frontend",                "audit": "quiz",       "host": "quiz.intelli-verse-x.ai",       "stack": "HTML",       "bd": null},
+    {"repo": "intelli-verse-x/quiz-verse-elite",                      "audit": "quizx",      "host": "quizx.intelli-verse-x.ai",      "stack": "JavaScript", "bd": null},
+    {"repo": "intelli-verse-x/quests-economy",                        "audit": "quests",     "host": "quests.intelli-verse-x.ai",     "stack": "TypeScript", "bd": null},
+    {"repo": "intelli-verse-x/Intelliverse-X-Gaming_backend",         "audit": "gaming",     "host": "gaming.intelli-verse-x.ai",     "stack": "TypeScript", "bd": null},
+    {"repo": "intelli-verse-x/Intelliverse-X-Products",               "audit": "products",   "host": "products.intelli-verse-x.ai",   "stack": "TypeScript", "bd": null},
+    {"repo": "intelli-verse-x/Intelliverse-X-AI",                     "audit": "ai-host",    "host": "ai-host.intelli-verse-x.ai",    "stack": "TypeScript", "bd": null, "note": "Service returns 426 - needs HTTP 200 landing page"}
+  ]
+}
