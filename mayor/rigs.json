@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rigs": {
+    "audits": {
+      "git_url": "https://github.com/intelli-verse-x/seo-geo-audits.git",
+      "added_at": "2026-05-17T15:40:31.364569175Z",
+      "beads": {
+        "repo": "",
+        "prefix": "au"
+      }
+    }
+  }
+}

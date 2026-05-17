@@ -1,0 +1,114 @@
+{
+  "editorMode": "normal",
+  "enabledPlugins": {
+    "beads@beads-marketplace": false
+  },
+  "hasCompletedOnboarding": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash(gh pr create*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt tap guard pr-workflow"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(git checkout -b*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt tap guard pr-workflow"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(git switch -c*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt tap guard pr-workflow"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(rm -rf /*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt tap guard dangerous-command"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(git push --force*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt tap guard dangerous-command"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(git push -f*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt tap guard dangerous-command"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt prime --hook"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt costs record \u0026"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt prime --hook"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/app/gastown/gt mail check --inject"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark"
+}
