@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-05-17T20:30:00Z",
+  "version": "1.0",
+  "purpose": "Per-project SEO/GEO 100% certification — fleet runs across 13 repos. Builds on existing remediation playbooks and backlink playbooks. Adds GEO code, keyword strategy, blog calendar, internal linking, and scorecard verification. Each project closes only when scorecard = 20/20.",
+  "templates": {
+    "scorecard": "/gt/audits/crew/auditor/CERTIFICATION_SCORECARD.md",
+    "content": "/gt/audits/crew/auditor/CONTENT_TEMPLATE.md",
+    "geo": "/gt/audits/crew/auditor/GEO_TEMPLATE.md"
+  },
+  "output_dirs": {
+    "geo": "/gt/audits/crew/auditor/geo/",
+    "content": "/gt/audits/crew/auditor/content/",
+    "certifications": "/gt/audits/crew/auditor/certifications/"
+  },
+  "fleet_roles": {
+    "seo-eng": "On-page SEO code changes. Builds on existing remediation playbooks + iterates baseline PRs. Owns S01-S10 criteria.",
+    "geo-eng": "GEO code changes: llms.txt, robots.txt AI-bot allowlist, FAQ/HowTo schema, citable content blocks, server-rendering fixes. Owns G01-G10 criteria.",
+    "content": "Keyword research, 12-post blog calendar, internal linking diff. Hands off internal-link diff to seo-eng for PR landing.",
+    "auditor": "Backlink playbooks + outreach PRs (already in flight from phase 2 — no overlap with new work).",
+    "qa": "Runs scorecard against deployed sites, posts results, files follow-up beads for any failed criteria, blocks epic close until 20/20."
+  },
+  "projects": [
+    {
+      "audit": "apex",
+      "host": "intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-x-frontend-revamp",
+      "stack": "Next.js",
+      "priority": "P0",
+      "baseline_pr": "https://github.com/intelli-verse-x/Intelliverse-x-frontend-revamp/pull/17",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/apex.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/apex.md",
+      "notes": "Flagship root domain. Internal-link sink for every sibling site. GEO is critical here — Roblox-class competitor analysis already in backlinks playbook."
+    },
+    {
+      "audit": "ai-host",
+      "host": "ai-host.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-AI",
+      "stack": "Next.js + WebSocket backend",
+      "priority": "P0",
+      "baseline_pr": "https://github.com/intelli-verse-x/Intelliverse-X-AI/pull/245",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/ai-host.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/ai-host.md",
+      "notes": "AI vertical — biggest GEO opportunity. Confirm baseline PR's HTTP-landing-page fix shipped before scorecard run (S01-S10 require HTTP)."
+    },
+    {
+      "audit": "ai-chat-v2",
+      "host": "ai-chat-v2.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-AI-chat-assistance",
+      "stack": "Next.js",
+      "priority": "P0",
+      "baseline_pr": "https://github.com/intelli-verse-x/Intelliverse-X-AI-chat-assistance/pull/3",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/ai-chat-v2.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/ai-chat-v2.md",
+      "notes": "AI chat — saturated category. Differentiation matters. Backlinks PR #4 already landed from phase 2."
+    },
+    {
+      "audit": "tutor",
+      "host": "tutor.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/DeepTutor",
+      "stack": "Next.js",
+      "priority": "P1",
+      "baseline_pr": "https://github.com/intelli-verse-x/DeepTutor/pull/6",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/tutor.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/tutor.md",
+      "notes": "EdTech vertical. Strong fit for Article + FAQ schema (long-form learning content)."
+    },
+    {
+      "audit": "platform",
+      "host": "platform.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-User-Webfrontend",
+      "stack": "React/Vite",
+      "priority": "P1",
+      "baseline_pr": "https://github.com/intelli-verse-x/Intelliverse-X-User-Webfrontend/pull/788",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/platform.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/platform.md",
+      "notes": "Vite/CRA SPA — almost certainly fails G10 (server-rendering). geo-eng must produce a concrete prerender or migration plan."
+    },
+    {
+      "audit": "animator",
+      "host": "animator.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/ManimCat",
+      "stack": "React",
+      "priority": "P1",
+      "baseline_pr": "https://github.com/intelli-verse-x/ManimCat/pull/5",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/animator.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/animator.md",
+      "notes": "Manim-adjacent. Tight keyword cluster: 'manim alternative', 'AI math animation'. content polecat: focus on tutorial-content angle."
+    },
+    {
+      "audit": "quests",
+      "host": "quests.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/quests-economy",
+      "stack": "Next.js",
+      "priority": "P1",
+      "baseline_pr": "https://github.com/intelli-verse-x/quests-economy/pull/104",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/quests.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/quests.md",
+      "notes": "Gamification + learn-to-earn. Backlinks PR #106 already landed from phase 2."
+    },
+    {
+      "audit": "products",
+      "host": "products.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-Products",
+      "stack": "Next.js (catalog)",
+      "priority": "P1",
+      "baseline_pr": "https://github.com/intelli-verse-x/Intelliverse-X-Products/pull/90",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/products.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/products.md",
+      "notes": "Catalog hub. Product schema per item is mandatory. Internal-link target from every other site."
+    },
+    {
+      "audit": "marketx",
+      "host": "marketx.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/IntelliMarketX-frontend",
+      "stack": "Next.js (marketplace)",
+      "priority": "P1",
+      "baseline_pr": "https://github.com/intelli-verse-x/IntelliMarketX-frontend/pull/6",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/marketx.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/marketx.md",
+      "notes": "Marketplace. Two-sided audience requires separate keyword strategies for buyers and sellers."
+    },
+    {
+      "audit": "quiz",
+      "host": "quiz.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Quizverse-web-frontend",
+      "stack": "Next.js",
+      "priority": "P2",
+      "baseline_pr": "https://github.com/intelli-verse-x/Quizverse-web-frontend/pull/59",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/quiz.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/quiz.md",
+      "notes": "Consumer quizzes — Quiz schema (@type: Quiz) per quiz page is high-value GEO."
+    },
+    {
+      "audit": "quizx",
+      "host": "quizx.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/quiz-verse-elite",
+      "stack": "Next.js",
+      "priority": "P2",
+      "baseline_pr": "https://github.com/intelli-verse-x/quiz-verse-elite/pull/2",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/quizx.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/quizx.md",
+      "notes": "Premium tier of quiz. Cannibalization risk with quiz — content polecat must differentiate keyword targets."
+    },
+    {
+      "audit": "gaming",
+      "host": "gaming.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-Gaming_backend",
+      "stack": "Node backend + frontend",
+      "priority": "P2",
+      "baseline_pr": "https://github.com/intelli-verse-x/Intelliverse-X-Gaming_backend/pull/49",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/gaming.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/gaming.md",
+      "notes": "Backend-heavy repo; verify the deployed surface and confirm where the frontend lives before opening PRs."
+    },
+    {
+      "audit": "kiosk",
+      "host": "kiosk.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/intelliverse-x-kiosk-frontend",
+      "stack": "React",
+      "priority": "P2",
+      "baseline_pr": "https://github.com/intelli-verse-x/intelliverse-x-kiosk-frontend/pull/29",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/kiosk.md",
+      "backlinks_path": "/gt/audits/crew/auditor/backlinks/kiosk.md",
+      "notes": "Kiosk/retail surface — niche. Confirm whether public indexability is even desirable; the QA polecat may flag this as scope-exempt."
+    }
+  ]
+}
