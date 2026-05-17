@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-05-17T19:35:00Z",
+  "purpose": "Per-project backlink strategy generation. One playbook per audit, mapped to GitHub repo (when one exists). State lives in beads.",
+  "template": "/gt/audits/crew/auditor/BACKLINK_TEMPLATE.md",
+  "output_dir": "/gt/audits/crew/auditor/backlinks/",
+  "audits": [
+    {
+      "audit": "apex",
+      "host": "intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-x-frontend-revamp",
+      "stack": "Next.js",
+      "existing_pr": "https://github.com/intelli-verse-x/Intelliverse-x-frontend-revamp/pull/17",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/apex.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/apex.md",
+      "priority": "P0",
+      "notes": "Flagship root domain — highest leverage. Internal cross-links from every other intelli-verse-x property should land here."
+    },
+    {
+      "audit": "tutor",
+      "host": "tutor.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/DeepTutor",
+      "stack": "Next.js",
+      "existing_pr": "https://github.com/intelli-verse-x/DeepTutor/pull/6",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/tutor.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/tutor.md",
+      "priority": "P1",
+      "notes": "EdTech vertical — strong fit for Product Hunt education category, awesome-edtech lists, /r/learnprogramming-adjacent communities."
+    },
+    {
+      "audit": "platform",
+      "host": "platform.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-User-Webfrontend",
+      "stack": "React/Vite",
+      "existing_pr": "https://github.com/intelli-verse-x/Intelliverse-X-User-Webfrontend/pull/788",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/platform.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/platform.md",
+      "priority": "P1",
+      "notes": "User-facing dashboard — focus on directories where users discover platforms (G2, Capterra, AlternativeTo) plus internal cross-links from apex."
+    },
+    {
+      "audit": "quiz",
+      "host": "quiz.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Quizverse-web-frontend",
+      "stack": "Next.js",
+      "existing_pr": "https://github.com/intelli-verse-x/Quizverse-web-frontend/pull/59",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/quiz.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/quiz.md",
+      "priority": "P2",
+      "notes": "Consumer quiz vertical — high social shareability; emphasize Reddit, Twitter, awesome-quiz lists, education aggregators."
+    },
+    {
+      "audit": "quizx",
+      "host": "quizx.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/quiz-verse-elite",
+      "stack": "Next.js",
+      "existing_pr": "https://github.com/intelli-verse-x/quiz-verse-elite/pull/2",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/quizx.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/quizx.md",
+      "priority": "P2",
+      "notes": "Premium/elite tier of quiz — B2B-adjacent. Different anchor strategy from consumer quiz."
+    },
+    {
+      "audit": "animator",
+      "host": "animator.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/ManimCat",
+      "stack": "React",
+      "existing_pr": "https://github.com/intelli-verse-x/ManimCat/pull/5",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/animator.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/animator.md",
+      "priority": "P1",
+      "notes": "Manim-adjacent — huge opportunity in awesome-manim, 3blue1brown community, math/CS YouTube creators, manim-community/manim GitHub."
+    },
+    {
+      "audit": "quests",
+      "host": "quests.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/quests-economy",
+      "stack": "Next.js",
+      "existing_pr": "https://github.com/intelli-verse-x/quests-economy/pull/104",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/quests.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/quests.md",
+      "priority": "P1",
+      "notes": "Gamification + learn-to-earn — Product Hunt strong fit, awesome-gamification, Web3-adjacent communities, edu+gaming Reddit."
+    },
+    {
+      "audit": "gaming",
+      "host": "gaming.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-Gaming_backend",
+      "stack": "Backend (Node) + frontend",
+      "existing_pr": "https://github.com/intelli-verse-x/Intelliverse-X-Gaming_backend/pull/49",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/gaming.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/gaming.md",
+      "priority": "P2",
+      "notes": "Gaming subdomain — communities are large but noisy; focus on aggregators (IndieDB, itch.io adjacent), gaming dev awesome-lists, niche subs."
+    },
+    {
+      "audit": "products",
+      "host": "products.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-Products",
+      "stack": "Next.js (catalog)",
+      "existing_pr": "https://github.com/intelli-verse-x/Intelliverse-X-Products/pull/90",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/products.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/products.md",
+      "priority": "P1",
+      "notes": "Catalog hub — internal cross-link from apex is critical. Each product page should be linkable as a standalone resource."
+    },
+    {
+      "audit": "ai-host",
+      "host": "ai-host.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-AI",
+      "stack": "Next.js + AI backend",
+      "existing_pr": "https://github.com/intelli-verse-x/Intelliverse-X-AI/pull/245",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/ai-host.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/ai-host.md",
+      "priority": "P0",
+      "notes": "AI vertical — biggest 2026 SEO/GEO opportunity. Target: There's An AI For That, Futurepedia, AI Tools Directory, ToolPilot, AI Scout, Insidr.AI, plus awesome-llm-apps."
+    },
+    {
+      "audit": "marketx",
+      "host": "marketx.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/IntelliMarketX-frontend",
+      "stack": "Next.js (marketplace)",
+      "existing_pr": "https://github.com/intelli-verse-x/IntelliMarketX-frontend/pull/6",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/marketx.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/marketx.md",
+      "priority": "P1",
+      "notes": "Marketplace — directory submissions (marketplace listings, e-commerce roundups), plus seller-side outreach for two-sided growth."
+    },
+    {
+      "audit": "kiosk",
+      "host": "kiosk.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/intelliverse-x-kiosk-frontend",
+      "stack": "React",
+      "existing_pr": "https://github.com/intelli-verse-x/intelliverse-x-kiosk-frontend/pull/29",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/kiosk.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/kiosk.md",
+      "priority": "P2",
+      "notes": "Kiosk/retail-display surface — niche; focus on retail-tech publications, kiosk industry directories, signage/digital-display roundups."
+    },
+    {
+      "audit": "ai-chat-v2",
+      "host": "ai-chat-v2.intelli-verse-x.ai",
+      "repo": "intelli-verse-x/Intelliverse-X-AI-chat-assistance",
+      "stack": "Next.js",
+      "existing_pr": "https://github.com/intelli-verse-x/Intelliverse-X-AI-chat-assistance/pull/3",
+      "remediation_path": "/gt/audits/crew/auditor/remediation/ai-chat-v2.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/ai-chat-v2.md",
+      "priority": "P0",
+      "notes": "AI chat — saturated category; differentiation matters. Target alternative-to-X listings (AlternativeTo specifically for 'alternative to ChatGPT/Claude/Perplexity'), AI tool directories, Product Hunt."
+    },
+    {
+      "audit": "beta",
+      "host": "beta.intelli-verse-x.ai",
+      "repo": null,
+      "stack": "unknown — not in pr-mapping",
+      "existing_pr": null,
+      "remediation_path": "/gt/audits/crew/auditor/remediation/beta.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/beta.md",
+      "priority": "P3",
+      "notes": "No repo mapped. Likely a staging/preview surface — backlinks should generally NOT point here (canonical issue). Playbook should explain why and recommend redirecting outreach to the production site."
+    },
+    {
+      "audit": "blogs",
+      "host": "blogs.intelli-verse-x.ai",
+      "repo": null,
+      "stack": "unknown — not in pr-mapping (possibly Webflow/Ghost/etc.)",
+      "existing_pr": null,
+      "remediation_path": "/gt/audits/crew/auditor/remediation/blogs.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/blogs.md",
+      "priority": "P0",
+      "notes": "Blog is the natural backlink magnet — even with no repo to PR into, this gets the most detailed playbook. Focus on guest-post syndication, content-republishing networks, and editorial outreach."
+    },
+    {
+      "audit": "qrstudio",
+      "host": "qrstudio.intelli-verse-x.ai",
+      "repo": null,
+      "stack": "unknown — not in pr-mapping",
+      "existing_pr": null,
+      "remediation_path": "/gt/audits/crew/auditor/remediation/qrstudio.md",
+      "output_path": "/gt/audits/crew/auditor/backlinks/qrstudio.md",
+      "priority": "P1",
+      "notes": "QR generator vertical — large directory ecosystem (qrcode-monkey-alternatives type lists), strong Product Hunt fit, design-tool aggregators. No repo to PR into, but playbook still high-value."
+    }
+  ]
+}
