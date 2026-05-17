@@ -1,0 +1,15 @@
+# Live close-policy for the audits + cert fleet.
+# bd will start enforcing this once the intelli-verse-x/beads PR lands.
+# Until then it is silent (gate is opt-in via file presence).
+
+rules:
+  - name: backlinks-need-playbook
+    when:
+      labels_any: [backlinks-2026-05]
+    require_one_of: [playbook_path, pr_url]
+
+  - name: cert-needs-pr
+    when:
+      labels_all: [cert-2026-05]
+      metadata_keys: [repo]
+    require_one_of: [pr_url, no_repo_reason]
