@@ -19,8 +19,11 @@ mv /gt/.beads/issues.jsonl.tmp /gt/.beads/issues.jsonl
 
 **When to run:**
 - After any `bd` command that modifies issues (create, update, close, etc.)
+- After any `git commit` (beads auto-exports during commits, breaking the JSONL)
 - Before attempting to re-import from JSONL
 - If you see: "Error 1105 (HY000): The value specified for generated column "depends_on_id" in table "dependencies" is not allowed."
+
+**Automated fix:** A git post-commit hook at `/gt/.git/hooks/post-commit` auto-fixes the JSONL after every commit. However, you still need to commit the fixed JSONL separately.
 
 ### bd-dep-add-workaround.sh
 
