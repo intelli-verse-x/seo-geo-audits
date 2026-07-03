@@ -10,19 +10,10 @@ import sys
 import os
 
 def fix_dependency(dep):
-    """Transform dependency to use source columns."""
-    if 'depends_on_id' not in dep:
-        return dep
-
-    dep_id = dep.pop('depends_on_id')
-
-    if dep_id.startswith('hq-wisp-') or dep_id.startswith('audits-wisp-'):
-        dep['depends_on_wisp_id'] = dep_id
-    elif dep_id.startswith('http://') or dep_id.startswith('https://'):
-        dep['depends_on_external'] = dep_id
-    else:
-        dep['depends_on_issue_id'] = dep_id
-
+    """Remove the generated column depends_on_id."""
+    if 'depends_on_id' in dep:
+        dep = dep.copy()
+        del dep['depends_on_id']
     return dep
 
 def fix_issue(issue):
