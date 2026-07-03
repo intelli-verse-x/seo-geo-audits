@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
+# Strip generated columns from JSONL after any beads operation that may export
+if [ -f /tmp/strip-generated-columns.py ] && [ -f /gt/.beads/issues.jsonl ]; then
+  python3 /tmp/strip-generated-columns.py /gt/.beads/issues.jsonl 2>/dev/null || true
+fi
+
 # --- BEGIN BEADS INTEGRATION v1.0.4 ---
 # This section is managed by beads. Do not remove these markers.
 if command -v bd >/dev/null 2>&1; then
