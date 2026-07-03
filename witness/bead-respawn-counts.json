@@ -1,0 +1,20 @@
+{
+  "beads": {
+    "cf-5g0": {
+      "bead_id": "cf-5g0",
+      "count": 1,
+      "last_respawn": "2026-07-03T04:38:04.611924679Z"
+    },
+    "cf-ha8": {
+      "bead_id": "cf-ha8",
+      "count": 1,
+      "last_respawn": "2026-07-03T12:15:37.642293426Z"
+    },
+    "cf-xd6": {
+      "bead_id": "cf-xd6",
+      "count": 1,
+      "last_respawn": "2026-07-03T08:45:04.265249368Z"
+    }
+  },
+  "last_updated": "2026-07-03T12:15:37.642295775Z"
+}
