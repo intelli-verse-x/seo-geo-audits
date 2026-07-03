@@ -24,7 +24,7 @@ fi
 # --- END BEADS INTEGRATION v1.0.4 ---
 
 # Strip generated columns from JSONL after beads export
-if [ -f /tmp/strip-generated-columns.py ] && [ -f /gt/.beads/issues.jsonl ]; then
-  /usr/bin/python3 /tmp/strip-generated-columns.py /gt/.beads/issues.jsonl 2>/dev/null || true
+if [ -f /gt/.beads/scripts/strip-generated-columns.py ] && [ -f /gt/.beads/issues.jsonl ]; then
+  /usr/bin/python3 /gt/.beads/scripts/strip-generated-columns.py /gt/.beads/issues.jsonl 2>/dev/null || true
   git add /gt/.beads/issues.jsonl 2>/dev/null || true
 fi
