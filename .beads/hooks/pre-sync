@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""
+Beads pre-sync hook: Fix JSONL generated column issue.
+
+This hook runs before beads syncs JSONL to DB, fixing the
+depends_on_id generated column issue.
+"""
+import json
+import sys
+import os
+
+def fix_dependency(dep):
+    """Transform dependency to use source columns."""
+    if 'depends_on_id' not in dep:
+        return dep
+
+    dep_id = dep.pop('depends_on_id')
+
+    if dep_id.startswith('hq-wisp-') or dep_id.startswith('audits-wisp-'):
+        dep['depends_on_wisp_id'] = dep_id
+    elif dep_id.startswith('http://') or dep_id.startswith('https://'):
+        dep['depends_on_external'] = dep_id
+    else:
+        dep['depends_on_issue_id'] = dep_id
+
+    return dep
+
+def fix_issue(issue):
+    """Fix dependencies in an issue."""
+    if 'dependencies' in issue and isinstance(issue['dependencies'], list):
+        issue['dependencies'] = [fix_dependency(d.copy()) for d in issue['dependencies']]
+    return issue
+
+def main():
+    jsonl_path = os.path.join(os.path.dirname(__file__), '..', 'issues.jsonl')
+    temp_path = jsonl_path + '.tmp'
+
+    try:
+        with open(jsonl_path, 'r') as f_in, open(temp_path, 'w') as f_out:
+            for line in f_in:
+                if not line.strip():
+                    continue
+                issue = json.loads(line)
+                fixed = fix_issue(issue)
+                f_out.write(json.dumps(fixed) + '\n')
+
+        os.replace(temp_path, jsonl_path)
+        sys.exit(0)
+    except Exception as e:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+        # Don't fail the sync - just warn
+        print(f"Warning: pre-sync hook failed: {e}", file=sys.stderr)
+        sys.exit(0)
+
+if __name__ == '__main__':
+    main()
