@@ -59,3 +59,10 @@ issue-prefix: hq
 dolt.idle-timeout: "0"
 
 routing.mode: "explicit"
+# CRITICAL: Auto-import from JSONL disabled to work around beads bug
+# where export includes GENERATED column depends_on_id, breaking re-import.
+# See: https://github.com/gastownhall/beads/issues/???
+# Workaround: Use 'bd init --from-jsonl' manually when needed.
+backup:
+  enabled: false
+no-db: false
