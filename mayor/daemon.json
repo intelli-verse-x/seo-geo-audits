@@ -14,7 +14,8 @@
       "enabled": true,
       "interval": "5m",
       "rigs": [
-        "audits"
+        "audits",
+        "content_factory"
       ]
     },
     "witness": {
@@ -22,7 +23,8 @@
       "enabled": true,
       "interval": "5m",
       "rigs": [
-        "audits"
+        "audits",
+        "content_factory"
       ]
     }
   },
