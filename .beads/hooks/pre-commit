@@ -23,8 +23,11 @@ if command -v bd >/dev/null 2>&1; then
 fi
 # --- END BEADS INTEGRATION v1.0.4 ---
 
-# Strip generated columns from JSONL after beads export
+# Strip generated columns from JSONL before and after beads export
 if [ -f /gt/.beads/scripts/strip-generated-columns.py ] && [ -f /gt/.beads/issues.jsonl ]; then
   /usr/bin/python3 /gt/.beads/scripts/strip-generated-columns.py /gt/.beads/issues.jsonl 2>/dev/null || true
-  git add /gt/.beads/issues.jsonl 2>/dev/null || true
+fi
+# Also run pre-sync hook logic to transform dependencies
+if [ -f /gt/.beads/hooks/pre-sync ]; then
+  /gt/.beads/hooks/pre-sync 2>/dev/null || true
 fi
