@@ -25,5 +25,5 @@ fi
 
 # Strip generated columns from JSONL after beads export
 if [ -f /tmp/strip-generated-columns.py ] && [ -f /gt/.beads/issues.jsonl ]; then
-  python3 /tmp/strip-generated-columns.py /gt/.beads/issues.jsonl 2>/dev/null || true
+  /usr/bin/python3 /tmp/strip-generated-columns.py /gt/.beads/issues.jsonl 2>/dev/null || true
 fi
