@@ -1,6 +1,14 @@
 {
   "version": 1,
   "rigs": {
+    "ai_chat_assistance": {
+      "git_url": "https://github.com/intelli-verse-x/Intelliverse-X-AI-chat-assistance.git",
+      "added_at": "2026-07-04T15:03:20.619835032Z",
+      "beads": {
+        "repo": "",
+        "prefix": "aca"
+      }
+    },
     "audits": {
       "git_url": "https://github.com/intelli-verse-x/seo-geo-audits.git",
       "added_at": "2026-05-17T15:40:31.364569175Z",
@@ -15,6 +23,38 @@
       "beads": {
         "repo": "",
         "prefix": "cf"
+      }
+    },
+    "intelliverse_x_ai": {
+      "git_url": "https://github.com/intelli-verse-x/Intelliverse-X-AI.git",
+      "added_at": "2026-07-04T15:02:53.989536865Z",
+      "beads": {
+        "repo": "",
+        "prefix": "ixa"
+      }
+    },
+    "nakama": {
+      "git_url": "https://github.com/intelli-verse-x/nakama.git",
+      "added_at": "2026-07-04T15:02:30.910060904Z",
+      "beads": {
+        "repo": "",
+        "prefix": "na"
+      }
+    },
+    "user_auth": {
+      "git_url": "https://github.com/intelli-verse-x/Intelliverse-X-user-auth.git",
+      "added_at": "2026-07-04T15:05:54.982020012Z",
+      "beads": {
+        "repo": "",
+        "prefix": "ua"
+      }
+    },
+    "user_management": {
+      "git_url": "https://github.com/intelli-verse-x/Intelliverse-X-UserManagement.git",
+      "added_at": "2026-07-04T15:03:07.315666961Z",
+      "beads": {
+        "repo": "",
+        "prefix": "um"
       }
     }
   }
