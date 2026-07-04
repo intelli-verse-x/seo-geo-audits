@@ -32,6 +32,14 @@
         "repo": "",
         "prefix": "na"
       }
+    },
+    "user_management": {
+      "git_url": "https://github.com/intelli-verse-x/Intelliverse-X-UserManagement.git",
+      "added_at": "2026-07-04T15:03:07.315666961Z",
+      "beads": {
+        "repo": "",
+        "prefix": "um"
+      }
     }
   }
 }

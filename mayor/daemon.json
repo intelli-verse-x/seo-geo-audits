@@ -47,7 +47,8 @@
         "audits",
         "content_factory",
         "nakama",
-        "intelliverse_x_ai"
+        "intelliverse_x_ai",
+        "user_management"
       ]
     },
     "scheduled_maintenance": {
@@ -70,7 +71,8 @@
         "audits",
         "content_factory",
         "nakama",
-        "intelliverse_x_ai"
+        "intelliverse_x_ai",
+        "user_management"
       ]
     }
   },
