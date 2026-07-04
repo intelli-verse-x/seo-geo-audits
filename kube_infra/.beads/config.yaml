@@ -1,0 +1,4 @@
+prefix: kube_infra
+issue-prefix: kube_infra
+dolt.idle-timeout: "0"
+export.auto: "false"

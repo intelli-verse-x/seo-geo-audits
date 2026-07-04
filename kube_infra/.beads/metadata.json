@@ -1,0 +1,9 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "server",
+  "dolt_server_host": "127.0.0.1",
+  "dolt_server_port": 3307,
+  "dolt_database": "kube_infra",
+  "project_id": "ead4d1f2-eb8e-41ab-a149-dfc0be3195fa"
+}
