@@ -46,7 +46,8 @@
       "rigs": [
         "audits",
         "content_factory",
-        "nakama"
+        "nakama",
+        "intelliverse_x_ai"
       ]
     },
     "scheduled_maintenance": {
@@ -68,7 +69,8 @@
       "rigs": [
         "audits",
         "content_factory",
-        "nakama"
+        "nakama",
+        "intelliverse_x_ai"
       ]
     }
   },
