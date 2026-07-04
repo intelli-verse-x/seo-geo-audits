@@ -1,0 +1,9 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "server",
+  "dolt_server_host": "127.0.0.1",
+  "dolt_server_port": 3307,
+  "dolt_database": "intelliverse_x_ai",
+  "project_id": "3e06e50e-feb8-490a-8b38-0a21a64b33e0"
+}
