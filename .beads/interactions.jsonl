@@ -2622,3 +2622,4 @@
 {"id":"int-9327e61f69eae1be92da11a318c286db","kind":"field_change","created_at":"2026-07-04T22:33:34.155059292Z","actor":"daemon","issue_id":"hq-wisp-xxib","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
 {"id":"int-aefc9aeebc7471fc3e073c50aaa05d40","kind":"field_change","created_at":"2026-07-04T22:33:35.017667802Z","actor":"daemon","issue_id":"hq-wisp-i7ee","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
 {"id":"int-876e4afe70bb7f0376774ff330c81193","kind":"field_change","created_at":"2026-07-04T22:33:36.094639825Z","actor":"daemon","issue_id":"hq-wisp-vu96","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
+{"id":"int-d1b061a954da917dd7f3da727a0ef9f3","kind":"field_change","created_at":"2026-07-04T22:38:28.048618216Z","actor":"daemon","issue_id":"hq-wisp-3zxz","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
