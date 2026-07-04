@@ -2,3 +2,4 @@
 {"prefix":"hq-cv-","path":"."}
 {"prefix":"au-","path":"audits"}
 {"prefix":"cf-","path":"content_factory"}
+{"prefix":"na-","path":"nakama/mayor/rig"}

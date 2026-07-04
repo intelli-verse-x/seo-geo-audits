@@ -16,6 +16,14 @@
         "repo": "",
         "prefix": "cf"
       }
+    },
+    "nakama": {
+      "git_url": "https://github.com/intelli-verse-x/nakama.git",
+      "added_at": "2026-07-04T15:02:30.910060904Z",
+      "beads": {
+        "repo": "",
+        "prefix": "na"
+      }
     }
   }
 }
