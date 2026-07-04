@@ -7,3 +7,4 @@
 {"prefix":"um-","path":"user_management"}
 {"prefix":"aca-","path":"ai_chat_assistance"}
 {"prefix":"ua-","path":"user_auth"}
+{"prefix":"ki-","path":"kube_infra"}

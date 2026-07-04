@@ -50,7 +50,8 @@
         "intelliverse_x_ai",
         "user_management",
         "ai_chat_assistance",
-        "user_auth"
+        "user_auth",
+        "kube_infra"
       ]
     },
     "scheduled_maintenance": {
@@ -76,7 +77,8 @@
         "intelliverse_x_ai",
         "user_management",
         "ai_chat_assistance",
-        "user_auth"
+        "user_auth",
+        "kube_infra"
       ]
     }
   },
