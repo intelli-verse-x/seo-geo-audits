@@ -1,6 +1,14 @@
 {
   "version": 1,
   "rigs": {
+    "ai_chat_assistance": {
+      "git_url": "https://github.com/intelli-verse-x/Intelliverse-X-AI-chat-assistance.git",
+      "added_at": "2026-07-04T15:03:20.619835032Z",
+      "beads": {
+        "repo": "",
+        "prefix": "aca"
+      }
+    },
     "audits": {
       "git_url": "https://github.com/intelli-verse-x/seo-geo-audits.git",
       "added_at": "2026-05-17T15:40:31.364569175Z",

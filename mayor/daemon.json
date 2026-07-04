@@ -48,7 +48,8 @@
         "content_factory",
         "nakama",
         "intelliverse_x_ai",
-        "user_management"
+        "user_management",
+        "ai_chat_assistance"
       ]
     },
     "scheduled_maintenance": {
@@ -72,7 +73,8 @@
         "content_factory",
         "nakama",
         "intelliverse_x_ai",
-        "user_management"
+        "user_management",
+        "ai_chat_assistance"
       ]
     }
   },
