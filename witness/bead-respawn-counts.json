@@ -1,9 +1,24 @@
 {
   "beads": {
+    "cf-16t": {
+      "bead_id": "cf-16t",
+      "count": 1,
+      "last_respawn": "2026-07-07T07:58:07.513604524Z"
+    },
+    "cf-4oi": {
+      "bead_id": "cf-4oi",
+      "count": 1,
+      "last_respawn": "2026-07-08T00:01:06.696048083Z"
+    },
     "cf-5g0": {
       "bead_id": "cf-5g0",
       "count": 1,
       "last_respawn": "2026-07-03T04:38:04.611924679Z"
+    },
+    "cf-brz": {
+      "bead_id": "cf-brz",
+      "count": 1,
+      "last_respawn": "2026-07-07T08:01:21.597225146Z"
     },
     "cf-ha8": {
       "bead_id": "cf-ha8",
@@ -15,10 +30,50 @@
       "count": 1,
       "last_respawn": "2026-07-03T08:45:04.265249368Z"
     },
+    "ixa-2dz": {
+      "bead_id": "ixa-2dz",
+      "count": 1,
+      "last_respawn": "2026-07-06T12:00:15.080950322Z"
+    },
+    "ixa-48d": {
+      "bead_id": "ixa-48d",
+      "count": 1,
+      "last_respawn": "2026-07-06T04:00:17.984032725Z"
+    },
+    "ixa-522": {
+      "bead_id": "ixa-522",
+      "count": 1,
+      "last_respawn": "2026-07-06T08:00:13.462456637Z"
+    },
+    "ixa-7a5": {
+      "bead_id": "ixa-7a5",
+      "count": 1,
+      "last_respawn": "2026-07-06T20:00:14.305383449Z"
+    },
+    "ixa-c8a": {
+      "bead_id": "ixa-c8a",
+      "count": 1,
+      "last_respawn": "2026-07-06T10:00:16.479846498Z"
+    },
     "ixa-fpo": {
       "bead_id": "ixa-fpo",
       "count": 1,
       "last_respawn": "2026-07-05T06:00:25.652555801Z"
+    },
+    "ixa-hmr": {
+      "bead_id": "ixa-hmr",
+      "count": 1,
+      "last_respawn": "2026-07-06T14:00:19.792673163Z"
+    },
+    "ixa-kf8": {
+      "bead_id": "ixa-kf8",
+      "count": 1,
+      "last_respawn": "2026-07-06T02:00:19.596927552Z"
+    },
+    "ixa-qp3": {
+      "bead_id": "ixa-qp3",
+      "count": 1,
+      "last_respawn": "2026-07-06T16:00:56.708775852Z"
     },
     "ki-wgx": {
       "bead_id": "ki-wgx",
@@ -30,11 +85,21 @@
       "count": 3,
       "last_respawn": "2026-07-04T17:41:38.738778615Z"
     },
+    "um-ce2": {
+      "bead_id": "um-ce2",
+      "count": 1,
+      "last_respawn": "2026-07-08T02:00:33.391337447Z"
+    },
     "um-unh": {
       "bead_id": "um-unh",
       "count": 1,
       "last_respawn": "2026-07-05T00:00:26.499725533Z"
+    },
+    "um-vu6": {
+      "bead_id": "um-vu6",
+      "count": 1,
+      "last_respawn": "2026-07-08T00:02:13.49587012Z"
     }
   },
-  "last_updated": "2026-07-05T14:00:19.926656522Z"
+  "last_updated": "2026-07-08T02:00:33.391341655Z"
 }
